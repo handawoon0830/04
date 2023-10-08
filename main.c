@@ -6,9 +6,13 @@
 int main(int argc, char *argv[]) {
 	int a;
 	
-	printf("input the second: ");
+	printf("enter the year :");
 	scanf("%i",&a);
 	
-	printf(" the time is %d : %d", a/60, a%60);
+	if (a%4==0 && a%100!=0 || a%400==0)
+		printf("the year is À±³â");
+		
+	else
+		printf("the year is not À±³â");
 	return 0;
 }
